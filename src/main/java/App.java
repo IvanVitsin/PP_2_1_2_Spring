@@ -9,5 +9,10 @@ public class App {
                 (Cat) applicationContext.getBean("Cat");
         System.out.println(bean.getMessage());
 
+        HelloWorld beanHi =
+                (HelloWorld) applicationContext.getBean("helloworld");
+        System.out.println(beanHi.getMessage());
+
+
     }
 }
